@@ -1,0 +1,179 @@
+column,definition
+race_id,District key.
+state,State.
+district,District number.
+system,"Special system (top-two, RCV) or empty."
+dem_candidate,Major Democrat.
+rep_candidate,Major Republican.
+b,"2024 Harris minus Trump two-party margin on the 2026 lines, from the votes, unrounded."
+baseline_bin,Part 1's baseline bin.
+margin_now,Democratic two-party margin on the current count.
+margin_central,"Projected final margin, central."
+y_central,"Y. perf_adj on the central projection (Democrat positive), rebuilt from votes."
+y_now,"perf_adj on the current count, rebuilt from votes."
+y_low,perf_adj_low as the projection gives it.
+y_high,perf_adj_high.
+p_sign_differs_sim,Projection's share of simulation draws in which perf_adj's sign differs from the central.
+outstanding_share_central,Projected share of the final two-party vote still out (0 to 1).
+out_pct,The same in percent.
+night,1 when the count is still the election-night count with no later source.
+near_final,1 when night is 0 and under 2 percent is outstanding.
+evidence_grade,Projection's grade for the remaining vote.
+count_source,Whose count.
+redrawn,1 when the lines changed since 2024.
+state_redrew,1 when the state voted on a new map in 2026.
+dem_pct,Democrat percent of all votes.
+rep_pct,Republican percent of all votes.
+other_share_pct,Everyone else.
+s_main_exclusion,"First failing test of part 1's ranking rule, empty when in S_main."
+in_s_main,S_main.
+in_s_comp,S_main and |b| <= 15.
+in_s_comp10,S_main and |b| <= 10.
+in_s_comp20,S_main and |b| <= 20.
+swing_2p,2024 minus 2020 presidential Democratic two-party margin on the 2026 lines (empty when unknown).
+hisp_share,"Hispanic share of CVAP, percent."
+black_share,"Non-Hispanic Black share of CVAP (DOJ grouping), percent. Not used in models."
+ba_plus_share,"Bachelor degree or higher, percent of 25 and over."
+hisp_src,Source code of hisp_share.
+inc_D,Democratic incumbent.
+inc_R,Republican incumbent.
+open_seat,No member on the ballot.
+pv_D,"Democratic incumbent 2024 personal vote, else 0."
+pvmiss_D,Democratic incumbent without a contested 2024 two-party general.
+pv_status_D,pv_status of the Democratic incumbent.
+pv_first_won_2024_D,1 when the Democratic incumbent first won in 2024.
+pv_flags_D,Flags from G1.
+pv_R,"Republican incumbent 2024 personal vote, else 0."
+pvmiss_R,Republican incumbent without one.
+pv_status_R,
+pv_first_won_2024_R,
+pv_flags_R,
+dpo_level,"Democrat prior office level (incumbent, higher, sl, local, none)."
+dpo_confidence,Research confidence.
+dpo_higher,Non-incumbent Democrat held statewide office or is a former member of Congress.
+dpo_sl,State legislature.
+dpo_local,Local office.
+rpo_level,Republican prior office level.
+rpo_confidence,
+rpo_higher,
+rpo_sl,
+rpo_local,
+dem_receipts,"Receipts through Oct 14, USD."
+rep_receipts,
+dmoney_miss,No receipts figure for the Democrat.
+rmoney_miss,
+receipts_share_dem,"Democrat's share of the two candidates' receipts (missing as 0, 0.5 when both 0)."
+mshare,logit of receipts_share_dem clipped to 0.02 to 0.98.
+ie_total,"All general IE for or against either candidate, USD."
+ie_share_dem,"IE for the Democrat plus against the Republican over all such IE, 0.5 when none."
+ie_share,ie_share_dem minus 0.5.
+dem_unitemized_share,Unitemized share of individual receipts (0 to 1).
+rep_unitemized_share,
+nominate_dim1_D,DW-NOMINATE dim1 of the Democrat (incumbents).
+nokken_poole_dim1_D,
+dnom,"Democratic incumbent, per 0.1 left of the House Democratic median, else 0."
+dnp,Same with Nokken-Poole.
+caucuses_D,Caucus rosters.
+caucus_unknown_D,
+nominate_dim1_R,
+nokken_poole_dim1_R,
+rnom,"Republican incumbent, per 0.1 right of the House Republican median, else 0."
+rnp,Same with Nokken-Poole.
+caucuses_R,
+caucus_unknown_R,
+cpc,Progressive Caucus roster.
+nd,New Democrat Coalition roster.
+cpc_only,
+nd_only,
+cpc_nd_both,
+blue_dog,
+freedom,Freedom Caucus roster.
+main_street,Main Street Caucus roster.
+rgg,Republican Governance Group roster.
+dem_progressive_groups,General-stage progressive endorsements.
+dem_centrist_groups,General-stage centrist endorsements.
+d_label,"prog_only, cent_only, both, neither (any Democrat)."
+d_label_ny_wfp_dropped,Same with NY WFP-only treated as none.
+d_label_prog_needs_non_wfp,Same with WFP not counted as a progressive group.
+ny_wfp_only,
+wfp_only,
+rep_r_groups,General-stage Republican-side endorsements.
+r_label,"hard, main, both, neither."
+trump,Trump endorsement.
+d_prog_only,"Non-incumbent Democrat, progressive only."
+d_cent_only,
+d_both,
+r_hard,"Non-incumbent Republican, Freedom Caucus Fund or Club for Growth."
+r_main,"Non-incumbent Republican, Defending Main Street or RMSP."
+dprim_contest_kind,Kind of the deciding contest (G2).
+dprim_contested,1 when the deciding contest had results and more than one candidate.
+dprim_id_system,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_set_strict,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_pair_strict,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_winner_side_strict,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_set_any,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_pair_any,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_winner_side_any,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_first,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_second,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_first_label_strict,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_second_label_strict,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_first_label_any,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_second_label_any,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_abs_margin,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_margin_within_party_tt,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_first_is_nov3_nominee,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_first_sitting_member,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_second_sitting_member,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_ny_wfp_only_any,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_opposed_by_first,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_opposed_by_second,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_contest_kind,From ideological_primaries_2026.csv when this race and party qualify.
+dprim_id_margin_used,"abs_margin in a party primary, margin_within_party_tt in a top-two or top-four primary."
+rprim_contest_kind,Kind of the deciding contest (G2).
+rprim_contested,1 when the deciding contest had results and more than one candidate.
+rprim_id_system,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_set_strict,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_pair_strict,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_winner_side_strict,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_set_any,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_pair_any,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_winner_side_any,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_first,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_second,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_first_label_strict,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_second_label_strict,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_first_label_any,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_second_label_any,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_abs_margin,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_margin_within_party_tt,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_first_is_nov3_nominee,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_first_sitting_member,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_second_sitting_member,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_ny_wfp_only_any,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_opposed_by_first,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_opposed_by_second,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_contest_kind,From ideological_primaries_2026.csv when this race and party qualify.
+rprim_id_margin_used,"abs_margin in a party primary, margin_within_party_tt in a top-two or top-four primary."
+n_other_in_state,Other scored races in the state.
+ctx_alone,1 when no other scored race in the state.
+ctx_y_central,"Mean y_central over the other scored races of the state, 0 when alone."
+ctx_y_now,"Mean y_now over the other scored races of the state, 0 when alone."
+ctx_y_low,"Mean y_low over the other scored races of the state, 0 when alone."
+ctx_y_high,"Mean y_high over the other scored races of the state, 0 when alone."
+swing,"Centred on the S_all mean of filled rows (swing_2p times 1, mean -4.7147), 0 when missing."
+swing_miss,Missing indicator.
+hisp,"Centred on the S_all mean of filled rows (hisp_share times 1, mean 14.7734), 0 when missing."
+hisp_miss,Missing indicator.
+college,"Centred on the S_all mean of filled rows (ba_plus_share times 1, mean 36.0399), 0 when missing."
+college_miss,Missing indicator.
+dunit,"Centred on the S_all mean of filled rows (dem_unitemized_share times 10, mean 2.6695), 0 when missing."
+dunit_miss,Missing indicator.
+runit,"Centred on the S_all mean of filled rows (rep_unitemized_share times 10, mean 1.8245), 0 when missing."
+runit_miss,Missing indicator.
+y_race_low,"Revision column. perf_adj_race_low, the race own low end with the national shift held at the central value."
+y_race_high,Revision column. perf_adj_race_high.
+metric_effect,Revision column. 1 when the OUTLIERS.md hand check calls the race a real metric effect (12 races).
+h24_hmp,"Revision column. On unchanged lines with a contested 2024 two-party House race, the 2024 Democratic House two-party margin minus the 2024 presidential one (house2024_results.csv), else empty."
+h24_swing,"Revision column. Same races, 2024 minus 2020 presidential Democratic two-party margin on the 2024 lines."
+h24_winner_D,"Revision column. Same races, 1 when a Democrat won the 2024 House race."

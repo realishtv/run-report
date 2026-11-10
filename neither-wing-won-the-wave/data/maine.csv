@@ -1,0 +1,11 @@
+race,party,candidate,votes,retrieved_utc,source
+ME-SEN,Democratic,Troy Jackson,376070,2026-11-08T18-37-40Z,civicAPI
+ME-SEN,Republican,Susan Collins,332803,2026-11-08T18-37-40Z,civicAPI
+ME-01,Democratic,Chellie Pingree,247947,,civicAPI
+ME-01,Republican,Ronald Russell,127098,,civicAPI
+ME-01,Harris 2024,,258863,,2024 presidential result on the 2026 lines
+ME-01,Trump 2024,,165214,,2024 presidential result on the 2026 lines
+ME-02,Democratic,Matthew Dunlap,164855,,civicAPI
+ME-02,Republican,Paul LePage,170360,,civicAPI
+ME-02,Harris 2024,,176789,,2024 presidential result on the 2026 lines
+ME-02,Trump 2024,,212763,,2024 presidential result on the 2026 lines
