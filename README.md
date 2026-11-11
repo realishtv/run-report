@@ -4,6 +4,6 @@ The code and data behind [Run Report](https://election.run/report), election.run
 
 | Piece | Published | Code and data |
 |---|---|---|
-| [Neither wing won the wave](https://election.run/report/neither-wing-won-the-wave) | Nov 11, 2026 | [neither-wing-won-the-wave](neither-wing-won-the-wave) |
+| [Neither wing won the wave](https://election.run/report/neither-wing-won-the-wave) | Nov 12, 2026 | [neither-wing-won-the-wave](neither-wing-won-the-wave) |
 
 Each piece runs with [Bun](https://bun.sh) and has no other dependencies.
